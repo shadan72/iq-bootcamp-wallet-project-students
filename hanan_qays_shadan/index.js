@@ -1,5 +1,7 @@
 
 
+const WALLETS_KEY = 'Wallets';
+
 
 
 
@@ -22,7 +24,7 @@
 
 // Objects
 //                                            String Object   number  string
-// Wallet     properties  "id random number"  Name   Currency Balance Description listOfTransactions
+// Wallet     properties  "id random number"  Name   Currency Balance Description transactions
 // set balance(updateBalance)=> this.balance = updateBalance(balance);
 //             ^this is a method form transaction
 // addNewTransaction(transaction) 
