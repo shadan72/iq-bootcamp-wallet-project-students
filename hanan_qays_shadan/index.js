@@ -40,7 +40,45 @@ const WALLETS_KEY = 'Wallets';
 
 // Qays Start
 
+class Wallet {
+    constructor( id,name,   currency ,balance ,description ,transactions=[]) {
+        this.id=id;
+        this.name=name;
+        this.currency=currency;
+        this.balance=balance;
+        this.description=description;
+        this.transactions=transactions;
 
+    }
+}
+class Currency {
+    constructor(id,name,symbol ) {
+        this.id = id;
+        this.name = name;
+        this.symbol = symbol;
+
+    }
+}
+class Transaction {
+    constructor(amount, date ,note ,tags=[] ) {
+        this.amount = amount;
+        this.date = date;
+        this.note = note;
+        this.tags=tags;
+    }
+
+
+
+
+}
+class Expense extends Transaction {
+}
+
+class Income extends Transaction {
+
+}
+
+// console.log((new Income('nnnn') instanceof Expense));
 
 // Qays End
 
@@ -78,20 +116,3 @@ const WALLETS_KEY = 'Wallets';
 
 
 
-
-class Transaction {
-    constructor(name) {
-        this.name
-    }
-}
-class Expense extends Transaction {
-
-}
-
-class Income extends Transaction {
-
-}
-
-console.log(
-
-    (new Income('nnnn') instanceof Expense));
